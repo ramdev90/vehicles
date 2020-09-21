@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row" style="margin-top: 100px;">
+    <div class="col-md-6">
+      <h1 class="form-signin-heading">Find a Ride</h1>
+      <p class="lead">Not a member? Please <a routerLink="/register">register</a> instead.</p>
+
+      <form>
+        <div class="form-group">
+          <label for="leave">Leaving From</label>
+          <input type="text" class="form-control" name="leave"
+            placeholder="Enter adress of place Where you want to leave ">
+          <!-- [(ngModel)]="credentials.email"> -->
+        </div>
+        <div class="form-group">
+          <label for="going">going to </label>
+          <input type="text" class="form-control" name="going"
+            placeholder="Enter adress of place Where you want to going to ">
+          <!-- [(ngModel)]="credentials.password"> -->
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in!</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+
+      <!-- <agm-map [latitude]="lat" [longitude]="lng" (mapClick)="onChoseLocation($event)">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+      </agm-map> -->
+
+    </div>
+  </div>
+</div>
