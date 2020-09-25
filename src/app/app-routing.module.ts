@@ -15,7 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { DHomeComponent } from './dashboard2/d-home/d-home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  // { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'home', component: HomeComponent },
   { path: 'find-ride', component: FindRideComponent },

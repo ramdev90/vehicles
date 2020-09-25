@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from '../app/header/header.component';
+import { HeaderComponent } from '../app/shared/header/header.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from '../app/login/login.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -15,7 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AuthGuardService } from './shared/auth-guard.service';
 import { SlideshowComponent } from './shared/slideshow/slideshow.component';
 import { Sweetalert2Component } from './shared/sweetalert2/sweetalert2.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from '../app/shared/footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Dashboard2Component } from './dashboard2/dashboard2.component';
 import { DHomeComponent } from './dashboard2/d-home/d-home.component';
@@ -24,9 +24,6 @@ import { DobComponent } from './register/dob/dob.component';
 import { GenderComponent } from './register/gender/gender.component';
 import { FindRideComponent } from './find-ride/find-ride.component';
 import { OfferRideComponent } from './offer-ride/offer-ride.component';
-// import { AgmCoreModule } from '@agm/core';
-import { AgmCoreModule } from '@agm/core';
-
 
 @NgModule({
   declarations: [
@@ -46,7 +43,7 @@ import { AgmCoreModule } from '@agm/core';
     DobComponent,
     GenderComponent,
     FindRideComponent,
-    OfferRideComponent,
+    OfferRideComponent
   ],
   imports: [
     BrowserModule,
@@ -54,15 +51,8 @@ import { AgmCoreModule } from '@agm/core';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    // AgmCoreModule.forRoot({
-    //   apiKey: 'AIzaSyA6ZLUwqvfWqkDZHHxD3GC9woNnGTa4iqo',
-    // }),
-
-    // AgmCoreModule.forRoot({
-    //   apiKey: 'AIzaSyDMsOPXkUPZsKspIM4XfBmHQdGoXhyCmlo'
-    // })
   ],
   providers: [AuthenticationService, AuthGuardService],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
